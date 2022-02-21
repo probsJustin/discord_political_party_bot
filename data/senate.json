@@ -1,0 +1,38 @@
+{
+  "server-id" : {
+    "percent_to_pass_vote": 50,
+    "party_of_majority": "your sisters political party",
+    "party_of_minority": "your brothers political party",
+    "percent_to_remove_member": 75,
+    "percent_to_rule_change": 75,
+    "leader": "your sister",
+    "parties": [],
+    "members": [
+      {
+        "name": "probablyMe",
+        "userId" : "probablyMyId",
+        "party": "your sisters political party"
+      }
+    ],
+    "allow vote": true,
+    "rules": []
+  },
+  "server-id2" : {
+    "percent_to_pass_vote": 50,
+    "party_of_majority": "",
+    "party_of_minority": "",
+    "percent_to_remove_member": 75,
+    "percent_to_rule_change": 75,
+    "leader": "",
+    "parties": [],
+    "members": [
+      {
+        "name": "probablyMe",
+        "userId" : "probablyMyId",
+        "party": "your sisters political party"
+      }
+    ],
+    "allow vote": true,
+    "rules": []
+  }
+}

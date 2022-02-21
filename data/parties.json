@@ -1,0 +1,48 @@
+{
+    "server-id" : [{
+      "name": "example party name",
+      "description": "party platform",
+      "party leader": "exampleUserName",
+      "party group name": "example group discord name",
+      "members": [],
+      "creation date": "",
+      "last updated date": "",
+      "founder": "",
+      "party_channel": ""
+      },
+      {
+      "name": "example party name",
+      "description": "party platform",
+      "party leader": "exampleUserName",
+      "party group name": "example group discord name",
+      "members": [],
+      "creation date": "",
+      "last updated date": "",
+      "founder": "",
+      "party_channel": ""
+      }
+    ],
+     "server-id2" : [{
+      "name": "example party name",
+      "description": "party platform",
+      "party leader": "exampleUserName",
+      "party group name": "example group discord name",
+      "members": [],
+      "creation date": "",
+      "last updated date": "",
+      "founder": "",
+      "party_channel": ""
+      },
+      {
+      "name": "example party name",
+      "description": "party platform",
+      "party leader": "exampleUserName",
+      "party group name": "example group discord name",
+      "members": [],
+      "creation date": "",
+      "last updated date": "",
+      "founder": "",
+      "party_channel": ""
+      }
+    ]
+}

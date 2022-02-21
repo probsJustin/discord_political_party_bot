@@ -1,0 +1,14 @@
+{
+    "server-id": {
+      "presidential_party_id" : "",
+      "presidential_party_name" : "your mothers political party",
+      "president_name" : "your mother",
+      "president_userid" : ""
+    },
+    "server-id2": {
+      "presidential_party_id" : "",
+      "presidential_party_name" : "",
+      "president_name" : "",
+      "president_userid" : ""
+    }
+}

@@ -1,0 +1,49 @@
+[{
+  "server-id" : {
+    "president": {
+      "activity" : "open",
+      "start_date": "",
+      "end_date": "",
+      "description" : "",
+      "president_votes": [],
+      "congress_votes": [],
+      "senate_votes": []
+    },
+    "senate": {
+      "activity" : "open",
+      "start_date": "",
+      "end_date": "",
+      "description" : "",
+      "president_votes": [],
+      "congress_votes": [],
+      "senate_votes": []
+    },
+    "congress": {
+      "activity" : "open",
+      "start_date": "",
+      "end_date": "",
+      "description" : "",
+      "president_votes": [],
+      "congress_votes": [],
+      "senate_votes": []
+    },
+    "vote_id": {
+      "activity" : "open",
+      "start_date": "",
+      "end_date": "",
+      "description" : "",
+      "president_votes": [],
+      "congress_votes": [],
+      "senate_votes": []
+    },
+    "vote_id2": {
+      "activity" : "closed",
+      "start_date": "",
+      "end_date": "",
+      "description" : "",
+      "president_votes": [],
+      "congress_votes": [],
+      "senate_votes": []
+    }
+  }
+}]

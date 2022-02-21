@@ -1,0 +1,20 @@
+{
+  "server-id": {
+    "action word": "$pol",
+    "parties_file_location": "../data/parties.json",
+    "president_status": "",
+    "congress_status": "",
+    "congress_seats": 10,
+    "senate_status": "",
+    "senate_seats": 10
+  },
+  "server-id": {
+    "action word": "$pol",
+    "parties_file_location": "../data/parties.json",
+    "president_status": "",
+    "congress_status": "",
+    "congress_seats": 10,
+    "senate_status": "",
+    "senate_seats": 10
+  }
+}
