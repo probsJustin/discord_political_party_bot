@@ -1,26 +1,13 @@
 import discord
 import json
+import jsonHandler as politics
 
 client = discord.Client()
-
-
-class politics:
-    default_directory = "./data"
-    party_file = f'{default_directory}/parties'
-    congress_file = f'{default_directory}/congress.json'
-    senate_file = f'{default_directory}/senate.json'
-    president_file = f'{default_directory}/president.json'
-    configure_file = f'{default_directory}/configure.json'
-    server_voting_file = f'{default_directory}/server_voting.json'
-    server_political_system_file = f'{default_directory}/server_political_systems.json'
-
 
 @client.event
 async def on_ready():
     print('US_POL_SYSTEM is ready!')
     print('We have logged in as {0.user}'.format(client))
-
-
 
 async def getMembersNames(members):
     returnObject = ""
@@ -142,6 +129,15 @@ def addChannel(channel_id, server_id):
 def addVoiceChannel(channel_id, server_id):
     return True
 
+def changeVoteStartDate(vote_id, new_date_time, server_id):
+    return True
+
+def changeVoteEndDate(vote_id, new_date_time, server_id):
+    return True
+
+def showVoteTime(vote_id, server_id):
+    return True
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -149,8 +145,6 @@ async def on_message(message):
 
     if message.content.startswith('$pol'):
         content = message.content.split(' ')
-
-
 
         if(content[1] == "vote"):
             if(content[2] == "ban"):
@@ -183,6 +177,9 @@ async def on_message(message):
                 await message.channel.send(await showParties(content[2], 'server-id'))
             if(content[2] == "party"):
                 await message.channel.send(await showParty(content[2], 'server-id'))
+            if(content[2] == "votetime"):
+                await message.channel.send(await showVoteTime(content[3], 'server-id'))
+
 
 
         if(content[1] == "debug"):
@@ -223,6 +220,12 @@ async def on_message(message):
                 if(content[3] == "party"):
                     await message.channel.send(await disbandGroup(content[4], 'fake user', 'server-id'))
 
+            if(content[2] == "change"):
+                if(content[3] == "end_date"):
+                    await message.channel.send(await changeVoteStartDate(content[4], content[5], 'server-id'))
+                if(content[3] == "start_date"):
+                    await message.channel.send(await changeVoteEndDate(content[4], content[5], 'server-id'))
+
         if(content[1] == "config"):
             if (content[2] == "president_status"):
                 await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
@@ -236,5 +239,8 @@ async def on_message(message):
                 await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
             if (content[2] == "activity"):
                 await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+
+
+
 
 client.run('')
