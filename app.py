@@ -150,6 +150,8 @@ async def on_message(message):
     if message.content.startswith('$pol'):
         content = message.content.split(' ')
 
+
+
         if(content[1] == "vote"):
             if(content[2] == "ban"):
                 await message.channel.send(await banUser(content[3], 'server-id'))
@@ -181,6 +183,7 @@ async def on_message(message):
                 await message.channel.send(await showParties(content[2], 'server-id'))
             if(content[2] == "party"):
                 await message.channel.send(await showParty(content[2], 'server-id'))
+
 
         if(content[1] == "debug"):
             if(content[2] == "start"):
@@ -220,18 +223,18 @@ async def on_message(message):
                 if(content[3] == "party"):
                     await message.channel.send(await disbandGroup(content[4], 'fake user', 'server-id'))
 
-            if(content[2] == "config"):
-                if (content[3] == "president_status"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
-                if (content[3] == "congress_status"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
-                if (content[3] == "congress_seats"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
-                if (content[3] == "senate_status"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
-                if (content[3] == "senate_seats"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
-                if (content[3] == "activity"):
-                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+        if(content[1] == "config"):
+            if (content[2] == "president_status"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+            if (content[2] == "congress_status"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+            if (content[2] == "congress_seats"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+            if (content[2] == "senate_status"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+            if (content[2] == "senate_seats"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
+            if (content[2] == "activity"):
+                await message.channel.send(await configure(content[2], content[3], 'fake user', 'server-id'))
 
 client.run('')
