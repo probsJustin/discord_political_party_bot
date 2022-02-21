@@ -46,13 +46,14 @@ async def on_message(message):
             if(content[2] == "president"):
                 await message.channel.send(await politics.showPoliticalPosition(content[2], 'server-id'))
             if (content[2] == "parties"):
-                await message.channel.send(await politics.showParties(content[2], 'server-id'))
+                await message.channel.send(await politics.showParties( 'server-id'))
             if(content[2] == "party"):
-                await message.channel.send(await politics.showParty(content[2], 'server-id'))
+                await message.channel.send(await politics.showParty(content[2], 'fake-user', 'server-id'))
             if(content[2] == "votetime"):
                 await message.channel.send(await politics.showVoteTime(content[3], 'server-id'))
 
-
+        if(content[1] == "impeach"):
+            await message.channel.send(await politics.impeach('server-id'))
 
         if(content[1] == "debug"):
             if(content[2] == "start"):
@@ -90,7 +91,7 @@ async def on_message(message):
 
             if(content[2] == "disband"):
                 if(content[3] == "party"):
-                    await message.channel.send(await politics.disbandGroup(content[4], 'fake user', 'server-id'))
+                    await message.channel.send(await politics.disbandGroup('fake user', 'server-id'))
 
             if(content[2] == "change"):
                 if(content[3] == "end_date"):

@@ -81,7 +81,7 @@ async def showPoliticalPosition(position_type, server_id):
 
     return returnObject
 
-def startVote(server_id):
+def startVote(summary, server_id):
     return True
 
 def endVote(vote_id, server_id):
@@ -136,4 +136,7 @@ def changeVoteEndDate(vote_id, new_date_time, server_id):
     return True
 
 def showVoteTime(vote_id, server_id):
+    return True
+
+def impeach(server_id):
     return True
