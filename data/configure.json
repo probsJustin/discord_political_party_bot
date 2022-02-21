@@ -6,7 +6,8 @@
     "congress_status": "",
     "congress_seats": 10,
     "senate_status": "",
-    "senate_seats": 10
+    "senate_seats": 10,
+    "activity": "enabled"
   },
   "server-id": {
     "action word": "$pol",
@@ -15,6 +16,7 @@
     "congress_status": "",
     "congress_seats": 10,
     "senate_status": "",
-    "senate_seats": 10
+    "senate_seats": 10,
+    "activity": "enabled"
   }
 }

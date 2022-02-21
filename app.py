@@ -94,18 +94,14 @@ async def showPoliticalPosition(position_type, server_id):
 
     return returnObject
 
-
 def startVote(server_id):
     return True
-
 
 def endVote(vote_id, server_id):
     return True
 
-
 def appointment(user_id, server_id):
     return True
-
 
 def removeAppointment(user_id, server_id):
     return True
@@ -113,6 +109,38 @@ def removeAppointment(user_id, server_id):
 def castVote(vote_id, user_id, server_id):
     return True
 
+def createPartyGroup(party_name, party_group_name, user_id, server_id):
+    return True
+
+def createParty(party_name, user_id, server_id):
+    return True
+
+def showParty(party_name, user_id, server_id):
+    return True
+
+def showParties(server_id):
+    return True
+
+def disbandGroup(user_id, server_id):
+    return True
+
+def configure(configure_option, configure_value, user_id, server_id):
+    return True
+
+def banUser(user_id, server_id):
+    return True
+
+def removeUser(user_id, server_id):
+    return True
+
+def deleteChannel(channel_id, server_id):
+    return True
+
+def addChannel(channel_id, server_id):
+    return True
+
+def addVoiceChannel(channel_id, server_id):
+    return True
 
 @client.event
 async def on_message(message):
@@ -121,6 +149,22 @@ async def on_message(message):
 
     if message.content.startswith('$pol'):
         content = message.content.split(' ')
+
+        if(content[1] == "vote"):
+            if(content[2] == "ban"):
+                await message.channel.send(await banUser(content[3], 'server-id'))
+            if(content[2] == "remove"):
+                await message.channel.send(await removeUser(content[3], 'server-id'))
+            if(content[2] == "delete"):
+                if (content[3] == "channel"):
+                    await message.channel.send(await deleteChannel(content[3], 'server-id'))
+                if (content[3] == "voicechannel"):
+                    await message.channel.send(await addVoiceChannel(content[3], 'server-id'))
+            if(content[2] == "add"):
+                if (content[3] == "channel"):
+                    await message.channel.send(await addChannel(content[3], 'server-id'))
+                if (content[3] == "voicechannel"):
+                    await message.channel.send(await addVoiceChannel(content[3], 'server-id'))
 
         if(content[1] == "show"):
             if(content[2] == "structure"):
@@ -133,6 +177,10 @@ async def on_message(message):
                 await message.channel.send(await showPoliticalPosition(content[2], 'server-id'))
             if(content[2] == "president"):
                 await message.channel.send(await showPoliticalPosition(content[2], 'server-id'))
+            if (content[2] == "parties"):
+                await message.channel.send(await showParties(content[2], 'server-id'))
+            if(content[2] == "party"):
+                await message.channel.send(await showParty(content[2], 'server-id'))
 
         if(content[1] == "debug"):
             if(content[2] == "start"):
@@ -162,5 +210,28 @@ async def on_message(message):
             if(content[2] == "vote"):
                 await message.channel.send(await castVote(content[3], 'fake user', 'server-id'))
 
+            if(content[2] == "create"):
+                if(content[3] == "group"):
+                    await message.channel.send(await createPartyGroup(content[4], content[5], 'fake user', 'server-id'))
+                if (content[3] == "party"):
+                    await message.channel.send(await createParty(content[3], 'fake user', 'server-id'))
+
+            if(content[2] == "disband"):
+                if(content[3] == "party"):
+                    await message.channel.send(await disbandGroup(content[4], 'fake user', 'server-id'))
+
+            if(content[2] == "config"):
+                if (content[3] == "president_status"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+                if (content[3] == "congress_status"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+                if (content[3] == "congress_seats"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+                if (content[3] == "senate_status"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+                if (content[3] == "senate_seats"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
+                if (content[3] == "activity"):
+                    await message.channel.send(await configure(content[3], content[4], 'fake user', 'server-id'))
 
 client.run('')
