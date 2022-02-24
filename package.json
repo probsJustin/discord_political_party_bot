@@ -1,0 +1,30 @@
+{
+  "name": "discord_political_party_bot",
+  "version": "1.0.0",
+  "description": "discord political party bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/Bot.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probsJustin/discord_political_party_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/probsJustin/discord_political_party_bot/issues"
+  },
+  "homepage": "https://github.com/probsJustin/discord_political_party_bot#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.5.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@nestjs/config": "^1.2.0",
+    "dotenv": "^16.0.0"
+  }
+}
