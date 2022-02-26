@@ -1,6 +1,5 @@
 
 
-
 export default class dataHandlerService {
 
     private readonly localDataStructure = "";

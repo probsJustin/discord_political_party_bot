@@ -23,14 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e4920d2-8997-4ac2-88f8-8c42caede636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/create_debug.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/debug.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/ping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/vote_edit.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/vote_end.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/vote_start.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/configurationHandlerService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/congressHandlerService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/partyHandlerService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/presidentHandlerService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/senateHandlerService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/serverInfoHandlerService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/dataHandlerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/dataHandlerService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
