@@ -23,10 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e4920d2-8997-4ac2-88f8-8c42caede636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/serverInfo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/dataHandlerService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/congress.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/congress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/parties.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/parties.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/president.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/president.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/senate.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/senate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/votes.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/votes.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
